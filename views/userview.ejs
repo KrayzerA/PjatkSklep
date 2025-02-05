@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Userview</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<label for="items"> Wybierz towar który chcesz kupić:</label>
+<select id="items" name="items">
+    <option value="ITN PPJ">ITN PPJ</option>
+    <option value="ITN GUI">ITN GUI</option>
+    <option value="Poprawa egzaminu ASD">Poprawa egzaminu ASD</option>
+    <option value="Poprawa egzaminu MAD">Poprawa egzaminu MAD</option>
+</select>
+<button type="button" onclick="location.href='/payment'">Kupić</button>
+<!--<iframe id="bitcoinPriceIndex" name="bitcoinPriceIndex" width="600" height="100"></iframe>-->
+<!--<form action="https://api.coindesk.com/v1/bpi/currentprice.json" method="get" target="bitcoinPriceIndex">-->
+<!--    <input type="submit" value="Pobierz aktualny cennik bitkoinu">-->
+<!--</form>-->
+<h3>Twoje towary:</h3>
+<table class="styled-table">
+    <thead>
+    <tr>
+        <th>Towar</th>
+        <th>Cena</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>ITN PPJ</td>
+        <td>1000zł</td>
+    </tr>
+    <tr>
+        <td>Poprawa egzaminu MAD</td>
+        <td>500zł</td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<form action="/">
+    <button type="submit"> Powrót na stronę główną</button>
+</form>
+</body>
+</html>

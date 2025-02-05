@@ -1,0 +1,469 @@
+/*@media print {*/
+/*  body {*/
+/*    font-family: Times, "Times New Roman", serif;*/
+/*  }*/
+
+/*  nav {*/
+/*    display: none;*/
+/*  }*/
+
+/*  footer a{*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'arial', sans-serif;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px 20px 0;
+  /*margin-left: -100px;*/
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  /*background: transparent;*/
+  background: rgb(34, 195, 195);
+  background: linear-gradient(0deg, rgba(34, 195, 195, 1) 0%, rgba(252, 45, 253, 1) 100%);
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  text-decoration: none;
+  justify-content: space-around;
+  background: rgb(34, 195, 195);
+  background: linear-gradient(0deg, rgba(252, 45, 253, 1) 0%, rgba(34, 195, 195, 1) 100%);
+}
+
+footer a {
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  font-size: 18px;
+  margin-left: 40px;
+  font-family: sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /*justify-content: space-between;*/
+  padding-left: 10px;
+}
+
+.imglogo {
+  position: absolute;
+  margin-top: -75px;
+  width: 150px;
+  height: 150px;
+  /*height: fit-content;*/
+}
+
+.wyszukiwarka input {
+  position: relative;
+  padding: 3px 5px;
+  outline: none;
+  border-radius: 10px;
+  background: transparent;
+}
+
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #2c2108;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #070607;
+  transition: .3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.content {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: fit-content;
+  background-size: cover;
+  background: url("https://pja.edu.pl/wp-content/uploads/2022/12/IMG_0893-1-e1670884923335.png") center;
+  /*display: flex;*/
+}
+
+.info {
+  /*position: absolute;*/
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  /*margin: 30px 0 0 0;*/
+  text-align: center;
+  width: 100%;
+  padding: 50px 0;
+  /*background: rgb(184, 184, 255);*/
+  background: transparent;
+}
+
+.info h1 {
+  font-size: 48px;
+  text-shadow: 2px 2px 5px #7a5ecf;
+  text-transform: capitalize;
+  font-family: serif;
+  color: #c3a2e8;
+}
+
+#specjalisci {
+  font-size: 30px;
+  text-shadow: 2px 2px 5px #7a5ecf;
+  text-transform: capitalize;
+  font-family: serif;
+}
+
+.info p {
+  color: white;
+  font-size: 18px;
+}
+
+.info p span {
+  color: #b131d4;
+  font-family: serif;
+}
+
+.wszystkietowary {
+  position: relative;
+  display: flex;
+  width: 100%;
+  /*max-width: fit-content;*/
+  max-height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-top: 200px;*/
+  justify-content: space-around;
+  /*background: rgb(212, 183, 255);*/
+  background: transparent;
+}
+
+.towary {
+  padding: 10px;
+  /*width: 400px;*/
+  height: fit-content;
+  background-color: rgb(152, 172, 255);
+  /*background-color: rgb(255, 216, 190);*/
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.towary h2 {
+  text-align: center;
+}
+
+.towary ul li {
+  list-style: none;
+  padding: 10px 100px;
+  margin: 5px;
+  background-color: rgb(248, 247, 255);
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.towary ul li:hover {
+  background-color: rgb(147, 129, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.popularneTowary {
+  padding: 20px;
+  /*width: 400px;*/
+  /*background-color: rgb(255, 216, 190);*/
+  background-color: rgb(152, 172, 255);
+  border: 1px solid #ddd;
+  height: fit-content;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.popularneTowary ol li {
+  margin: 10px -10px 0 10px;
+  padding: 10px;
+  width: 100%;
+  background: rgb(248, 247, 255);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  border-radius: 5px;
+}
+
+.popularneTowary ol li:hover {
+  background-color: rgb(147, 129, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.specjalisci {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px 10px 50px 0;
+  /*background: rgb(212, 199, 255);*/
+  background: transparent;
+}
+
+.specjalisci h2 {
+  margin-left: 15px;
+  color: #c3a2e8;
+}
+
+.btn {
+  display: inline-block;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 9px 22px;
+  margin: 10px 0;
+  font-size: 18px;
+  width: 100%;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  background: linear-gradient(90deg, #5522fa 0, #0074e4 100%);
+  border-radius: 50px;
+  transition: color .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+.btn-table {
+  display: inline-block;
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin: 15px 0 0 15px;
+  padding: 9px 22px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  background: linear-gradient(90deg, #5522fa 0, #0074e4 100%);
+  border-radius: 50px;
+  transition: color .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+.btn:hover, .btn-table:hover {
+  box-shadow: 0 0 0 0.15rem #5ceace;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0 0 15px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #5638b5;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  color: #0c1b07;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #98acff;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+  background-color: #d7ccff;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(147, 155, 255);
+}
+
+tr:hover {
+  font-weight: bold;
+  color: white;
+}
+
+
+.login-body, .register-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #d2b3ff;
+}
+
+.login, .register {
+  background: #7a5ecf;
+  width: 420px;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.login h1, .register h1 {
+  font-size: 48px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.input-box {
+  position: relative;
+  margin: 30px 0;
+  width: 100%;
+  height: 50px;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 2px solid rgba(255,255,255,.2);
+  border-radius: 40px;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box i {
+  /*background: coral;*/
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #7a5ecf;
+  font-size: 20px;
+}
+
+.login .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  /*margin: -15px 0 15px;*/
+  /*background: red;*/
+}
+
+.remember-forgot a {
+  text-decoration: none;
+  color: white;
+}
+
+.remember-forgot label input {
+  margin-right: 3px;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.register-link, .login-link {
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.register-link p a, .login-link p a {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+
+.register-link p a:hover, .login-link p a:hover {
+  text-decoration: underline;
+}
+
+.input-box.error {
+  display: contents;
+}
+
+
+.input-box.error input {
+  border-color: red;
+}
+
+.input-box.success input {
+  border: none;
+  /*border-color: #4efb4e;*/
+}
+
+.input-box .error {
+  /*font-size: 9px;*/
+  display: block;
+  color: #ff0000;
+}
+
+.addproduct-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(rgb(119, 255, 231), rgb(255, 85, 253));
+}
+
+.addproduct-form-info {
+  position: relative;
+  background: #98acff;
+  border-radius: 5px;
+  padding: 20px 15px;
+}
+
+.input-button input {
+  position: relative;
+  width: 100%;
+  padding: 8px 4px;
+  background: #7a5ecf;
+  border: none;
+  color: white;
+  border-radius: 15px;
+}
+
+.input-button input:hover {
+  background: antiquewhite;
+  color: #070607;
+}
+
+.btn-table a {
+  padding: 9px 22px;
+  margin: -9px -22px;
+  text-decoration: none;
+  color: white;
+}

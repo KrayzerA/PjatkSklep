@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="/javascripts/ProductValidator.js" async></script>
+</head>
+<body>
+<div class="addproduct-body">
+    <form id="addproduct-form" action="/products" method="post">
+        <div class="addproduct-form-info">
+            <div>
+                <h1> Dodaj nowy towar</h1>
+            </div>
+            <div class="input-box">
+                <label for="price"></label>Wpisz nazwe<input type="text" name="name" id="name">
+                <p class="error"></p>
+            </div>
+            <div class="input-box">
+                <label for="price"></label>Wpisz cene (zł)<input type="number" name="price" id="price">
+                <p class="error"></p>
+            </div>
+            <div class="input-button">
+                <input type="submit" value="dodaj">
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

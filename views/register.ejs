@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/RegisterPage.js" async></script>
+</head>
+<body>
+<div class="register-body">
+    <form id="register-form" action="/userview">
+        <div class="register">
+            <div>
+                <h1>Register</h1>
+            </div>
+            <div class="input-box">
+                <input id="register-email" type="email" placeholder="Email">
+                <p class="error"></p>
+            </div>
+            <div class="input-box">
+                <input id="register-username" type="text" placeholder="Username">
+                <p class="error"></p>
+            </div>
+            <div class="input-box">
+                <input id="register-password" type="password" placeholder="Password">
+                <p class="error"></p>
+            </div>
+            <button class="btn" type="submit">Register</button>
+            <div class="login-link">
+                <p>Already have an account? <a href="/login">Sign in</a></p>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

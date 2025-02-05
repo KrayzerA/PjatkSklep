@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rayment</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<form action="/userview">
+    <p>
+        Czy masz 18 lat lub więcej?<br>
+        <label>
+            <input type="radio" name="wiek" value="Tak">Tak<br>
+        </label>
+        <label>
+            <input type="radio" name="wiek" value="Nie">Nie<br>
+        </label>
+    </p>
+    <p>Sposób opłaty:<br>
+        <label>
+            <input type="checkbox">Kartą<br>
+        </label>
+        <label>
+            <input type="checkbox">Gotówką<br>
+        </label>
+    </p>
+    <label for="data">Data dostawy:</label>
+    <input type="date" id="data"><br>
+    <label for="komentarz">Komentarz:</label>
+    <input type="text" id="komentarz"><br>
+    <button type="submit">Kupić</button>
+</form>
+</body>
+</html>

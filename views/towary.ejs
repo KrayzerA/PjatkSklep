@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Products</title>
+</head>
+<body>
+<div class="towary-table">
+    <table class="styled-table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nazwa</th>
+            <th>Cena</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% for (var product of products) { %>
+            <tr>
+                <td><%= product.id %></td>
+                <td><%= product.name %></td>
+                <td><%= product.price %></td>
+                <td><a href="/products/<%= product.id %>">Info</a></td>
+            </tr>
+        <% } %>
+        </tbody>
+    </table>
+    <div class="btn-table">
+        <a href="/products/create">Dodaj</a>
+    </div>
+</div>
+<div>
+    <a href="/">Powrot na glowna strone</a>
+</div>
+<footer>
+    <a href="mailto:fakepjatksklep@fake.fake">Send us an email</a>
+    <a href="https://www.instagram.com/PJATK">Instagram</a>
+    <a href="/">Leave a comment</a>
+</footer>
+</body>
+</html>
